@@ -27,8 +27,7 @@ simple Sink
         input in;
 }
 
-//Envia
-simple nodeTx
+module NodeTx
 {
     parameters:
         @display("i=block/routing");
@@ -41,14 +40,13 @@ simple nodeTx
         }
         queue: Queue {
             parameters:
-                @display("p=75,190");
+                @display("p=75,100");
         }
-    connections:
-        gen.out --> queue.in;
-        queue.out --> out;    
+        connections:
+            gen.out --> queue.in;
+            queue.out --> out;
 }
-//recibe
-simple nodeRx
+module NodeRx
 {
     parameters:
         @display("i=block/routing");
@@ -61,37 +59,36 @@ simple nodeRx
         }
         queue: Queue {
             parameters:
-                @display("p=75,190");
+                @display("p=75,100");
         }
-    connections:
-        in --> sink.in;
-        //case study 1:
-        queue.out --> {    datarate = 0.5mbps;    } --> sink.in;
-        //case study 2:
-        //queue.out --> {    datarate = 1mbps;    } --> sink.in;
+        connections:
+            in --> queue.in;
+            //case study 1;
+            //queue.out --> { datarate = 0.5Mbps; } --> sink.in;
+            //case study 2;
+            queue.out --> { datarate = 1Mbps; } --> sink.in;
 }
 
 network Network
 {
     @display("bgl=2");
     submodules:
-        nodeTx: nodeTx {
-            @display("p=30,30");
+        nodeTx: NodeTx {
+            parameters:
+                @display("p=30,30");
         }
-        queue1: Queue {
-            @display("p=130,30");
+        queue: Queue {
+            parameters:
+                @display("p=130,30");
         }
-        queue2: Queue {
-            @display("p=130,90");
+        nodeRx: NodeRx {
+            parameters:
+                @display("p=230,30");
         }
-        nodeRx: nodeRx {
-            @display("p=230,30");
-        }    
     connections:
-        nodeTx.out --> {datarate = 1mbps; delay = 100us;} -->queue.in;
-        //case study 1:
-        queue1.out --> {datarate = 1mbps; delay = 100us;} --> nodeRx.in;
-        //case study 2:
-        //queue1.out --> {datarate = 0.5mbps; delay = 100us;} --> nodeRx.in;
-
+        nodeTx.out --> { datarate = 1Mbps; delay = 100us; } --> queue.in;
+        //case study 1;
+        //queue.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
+        //case study 2;
+        queue.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
 }
