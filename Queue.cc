@@ -34,8 +34,8 @@ Queue::~Queue() {
 
 void Queue::initialize() {
     buffer.setName("buffer");
-    bufferSizeVector.setName("BufferSizeQueue");
-    packetDropVector.setName("PacketDropQueue");
+    bufferSizeQueue.setName("BufferSizeQueue");
+    packetDropQueue.setName("PacketDropQueue");
     packetDropQueue.record(0);
     endServiceEvent = new cMessage("endService");
 }
@@ -62,12 +62,12 @@ void Queue::handleMessage(cMessage *msg) {
             // drop the packet
             delete(msg);
             this->bubble("packet-dropped");
-            packetDropVector.record(1);
+            packetDropQueue.record(1);
         }
         else {
             // Enqueue the packet
             buffer.insert(msg);
-            bufferSizeVector.record(buffer.getLength());
+            bufferSizeQueue.record(buffer.getLength());
             // if the server is idle
             if (!endServiceEvent->isScheduled()) {
                 // start the service
