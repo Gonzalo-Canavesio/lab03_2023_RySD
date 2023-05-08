@@ -13,7 +13,6 @@ private:
     cQueue buffer;
     cMessage *endServiceEvent;
     simtime_t serviceTime;
-    void send();
 public:
     Queue();
     virtual ~Queue();
@@ -35,23 +34,12 @@ Queue::~Queue() {
 
 void Queue::initialize() {
     buffer.setName("buffer");
-    bufferSizeQueue.setName("bufferSizeQueue");
-    packetDropQueue.setName("packetDropQueue");
+    bufferSizeVector.setName("BufferSizeQueue");
+    packetDropVector.setName("PacketDropQueue");
     packetDropQueue.record(0);
     endServiceEvent = new cMessage("endService");
 }
 
-void Queue::send(){
-    if (!buffer.isEmpty()) {
-            // dequeue packet
-            cMessage *pkt = (cMessage*) buffer.pop();
-            // send packet
-            send(pkt, "out");
-            // start new service
-            serviceTime = pkt->getDuration();
-            scheduleAt(simTimed() + serviceTime, endServiceEvent);
-    }
-}
 void Queue::finish() {
 }
 
@@ -60,23 +48,32 @@ void Queue::handleMessage(cMessage *msg) {
     // if msg is signaling an endServiceEvent
     if (msg == endServiceEvent) {
         // if packet in buffer, send next one
-        send();
+        if (!buffer.isEmpty()) {
+            // dequeue packet
+            cPacket *pkt = (cPacket*) buffer.pop();
+            // send packet
+            send(pkt, "out");
+            // start new service
+            serviceTime = pkt->getDuration();
+            scheduleAt(simTime() + serviceTime, endServiceEvent);
+        }
     } else { // if msg is a data packet
-        if (buffer.getLength() >= par("bufferSize").longValue()){
-            //drop the packet
-            delete msg;
-            this->bubble("Packet dropped");
-            packetDropQueue.record(1);
-        } else{ 
-            // enqueue the packet
+        if (buffer.getLength() >= par("bufferSize").intValue()) {
+            // drop the packet
+            delete(msg);
+            this->bubble("packet-dropped");
+            packetDropVector.record(1);
+        }
+        else {
+            // Enqueue the packet
             buffer.insert(msg);
-            bufferSizeQueue.record(buffer.getLength());
+            bufferSizeVector.record(buffer.getLength());
             // if the server is idle
             if (!endServiceEvent->isScheduled()) {
                 // start the service
                 scheduleAt(simTime() + 0, endServiceEvent);
             }
-        }
+         }
     }
 }
 

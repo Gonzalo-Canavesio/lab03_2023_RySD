@@ -10,6 +10,7 @@ class Sink : public cSimpleModule {
 private:
     cStdDev delayStats;
     cOutVector delayVector;
+    cOutVector packetUsedVector;
 public:
     Sink();
     virtual ~Sink();
@@ -29,6 +30,7 @@ Sink::~Sink() {
 
 void Sink::initialize(){
     // stats and vector names
+    packetUsedVector.setName("PacketUsed");
     delayStats.setName("TotalDelay");
     delayVector.setName("Delay");
 }
@@ -45,6 +47,7 @@ void Sink::handleMessage(cMessage * msg) {
     // update stats
     delayStats.collect(delay);
     delayVector.record(delay);
+    packetUsedVector.record(1);
     // delete msg
     delete(msg);
 }

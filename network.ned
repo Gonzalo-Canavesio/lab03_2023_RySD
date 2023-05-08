@@ -40,7 +40,7 @@ module NodeTx
         }
         queue: Queue {
             parameters:
-                @display("p=75,100");
+                @display("p=75,190");
         }
         connections:
             gen.out --> queue.in;
@@ -59,14 +59,14 @@ module NodeRx
         }
         queue: Queue {
             parameters:
-                @display("p=75,100");
+                @display("p=75,190");
         }
         connections:
             in --> queue.in;
             //case study 1;
-            //queue.out --> { datarate = 0.5Mbps; } --> sink.in;
+            queue.out --> { datarate = 0.5Mbps; } --> sink.in;
             //case study 2;
-            queue.out --> { datarate = 1Mbps; } --> sink.in;
+            //queue.out --> { datarate = 1Mbps; } --> sink.in;
 }
 
 network Network
@@ -88,7 +88,7 @@ network Network
     connections:
         nodeTx.out --> { datarate = 1Mbps; delay = 100us; } --> queue.in;
         //case study 1;
-        //queue.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
+        queue.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
         //case study 2;
-        queue.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
+        //queue.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
 }

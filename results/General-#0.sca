@@ -1,8 +1,8 @@
 version 3
-run General-0-20230505-22:24:12-4818
+run General-0-20230508-12:12:16-1835
 attr configname General
-attr datetime 20230505-22:24:12
-attr datetimef 20230505-222412
+attr datetime 20230508-12:12:16
+attr datetimef 20230508-121216
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 4818
+attr processid 1835
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -18,13 +18,13 @@ attr runnumber 0
 attr seedset 0
 config network Network
 config sim-time-limit 200s
+config Network.gen.generationInterval exponential(0.001)
+config Network.queue.serviceTime exponential(0.001)
 config Network.nodeTx.gen.generationInterval exponential(0.1)
 config Network.nodeTx.gen.packetByteSize 12500
 config Network.queue.bufferSize 200
 config Network.nodeRx.queue.bufferSize 200
 config Network.nodeTx.queue.bufferSize 2000000
-config Network.gen.generationInterval exponential(0.001)
-config Network.queue.serviceTime exponential(0.001)
 
 par Network.nodeTx.out.channel typename "\"ned.DatarateChannel\""
 par Network.nodeTx.out.channel disabled false
@@ -45,7 +45,7 @@ attr mutable ""
 par Network.queue.out.channel delay 0.0001s
 attr mutable ""
 attr unit s
-par Network.queue.out.channel datarate 500000bps
+par Network.queue.out.channel datarate 1e+06bps
 attr mutable ""
 attr unit bps
 par Network.queue.out.channel ber 0
@@ -68,7 +68,7 @@ attr mutable ""
 par Network.nodeRx.queue.out.channel delay 0s
 attr mutable ""
 attr unit s
-par Network.nodeRx.queue.out.channel datarate 1e+06bps
+par Network.nodeRx.queue.out.channel datarate 500000bps
 attr mutable ""
 attr unit bps
 par Network.nodeRx.queue.out.channel ber 0
@@ -76,7 +76,7 @@ attr mutable ""
 par Network.nodeRx.queue.out.channel per 0
 attr mutable ""
 par Network.nodeRx.sink typename "\"Sink\""
-scalar Network.nodeRx.sink "Avg delay" 49.741569311069
+scalar Network.nodeRx.sink "Avg delay" 32.879468835695
 scalar Network.nodeRx.sink "Number of packets" 998
 par Network.nodeRx.queue typename "\"Queue\""
 par Network.nodeRx.queue serviceTime 0.1
