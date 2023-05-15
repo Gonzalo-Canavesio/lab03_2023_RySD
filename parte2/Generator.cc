@@ -11,6 +11,7 @@ private:
     cMessage *sendMsgEvent;
     cStdDev transmissionStats;
     cOutVector packetGenVector;
+    int packetSent;
 public:
     Generator();
     virtual ~Generator();
@@ -33,6 +34,7 @@ Generator::~Generator() {
 void Generator::initialize() {
     packetGenVector.setName("PacketGen");
     transmissionStats.setName("TotalTransmissions");
+    packetSent = 0;
     // create the send packet
     sendMsgEvent = new cMessage("sendEvent");
     // schedule the first event at random time
@@ -40,14 +42,20 @@ void Generator::initialize() {
 }
 
 void Generator::finish() {
+    recordScalar("TotalTransmissions", transmissionStats.getSum());
+    recordScalar("TotalPackets", packetSent);
 }
 
 void Generator::handleMessage(cMessage *msg) {
 
     // create new packet
     cPacket *pkt = new cPacket("packet");
-    packetGenVector.record(1);
+    // record the packet generation
+    packetSent++;
+    packetGenVector.record(packetSent);
     pkt->setByteLength(par("packetByteSize"));
+    // record the packet transmission
+    transmissionStats.collect(pkt->getByteLength());
     // send to the output
     send(pkt, "out");
 

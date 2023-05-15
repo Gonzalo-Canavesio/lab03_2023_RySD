@@ -8,6 +8,7 @@ using namespace omnetpp;
 
 class Queue: public cSimpleModule {
 private:
+    int packetDrop;
     cOutVector bufferSizeQueue;
     cOutVector packetDropQueue;
     cQueue buffer;
@@ -34,6 +35,7 @@ Queue::~Queue() {
 
 void Queue::initialize() {
     buffer.setName("buffer");
+    packetDrop = 0;
     bufferSizeQueue.setName("BufferSizeQueue");
     packetDropQueue.setName("PacketDropQueue");
     packetDropQueue.record(0);
@@ -58,13 +60,23 @@ void Queue::handleMessage(cMessage *msg) {
             scheduleAt(simTime() + serviceTime, endServiceEvent);
         }
     } else { // if msg is a data packet
+        const int umbral =  0.80 * par("bufferSize").intValue();        
         if (buffer.getLength() >= par("bufferSize").intValue()) {
             // drop the packet
             delete(msg);
             this->bubble("packet-dropped");
-            packetDropQueue.record(1);
+            packetDrop++;
+            packetDropQueue.record(packetDrop);
         }
-        else {
+        else { 
+            if (buffer.getLength() >= umbral)
+            {
+                Feedbackpkt *feedbackPkt = new Feedbackpkt();
+                feedbackPkt->setByteLength(20);
+                feedbackPkt->setKind(2);
+                feedbackPkt->setReaminingBufferSize(par("bufferSize").longValue() - buffer.getLength());
+                send(feedbackPkt, "out");
+            }            
             // Enqueue the packet
             buffer.insert(msg);
             bufferSizeQueue.record(buffer.getLength());
