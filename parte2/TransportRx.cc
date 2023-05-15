@@ -122,3 +122,4 @@ void TransportRx::handleMessage(cMessage *msg) {
         }
     }
 }
+#endif
