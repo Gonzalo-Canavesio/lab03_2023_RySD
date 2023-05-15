@@ -4,7 +4,6 @@
 #include <omnetpp.h>
 #include <string.h>
 
-
 using namespace omnetpp;
 
 class TransportRx: public cSimpleModule {
@@ -95,14 +94,13 @@ void TransportRx::handleMessage(cMessage *msg) {
         sendFeedback();    
     } else {
         // enqueue the message
-        if (strcmp(msg->getName(), "packet") == 0) {
+        if (msg->getKind() == 2) {
             const int umbral = 0.70 * par("bufferSize").intValue();
             if (buffer.getLength() < par("bufferSize").intValue()) {
                 if (buffer.getLength() >= umbral){
                     FeedbackPkt *fPkt = new FeedbackPkt();
-                    fPkt->setName("feedback");
+                    fPkt->setkind(2);
                     fPkt->setByteLength(1);
-                    fPkt->setFullBufferR(true);
                     enqueueFeedback(fPkt);                
                 }
                 buffer.insert(msg);
@@ -115,7 +113,7 @@ void TransportRx::handleMessage(cMessage *msg) {
                 pktDrop.record(pktDropCount);
                 delete msg;
             }
-        } else if (strcmp(msg->getName(), "feedback") == 0) {
+        } else{
             // the message is a feedback packet
             enqueueFeedback(msg);
         }
