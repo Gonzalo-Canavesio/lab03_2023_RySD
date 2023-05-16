@@ -14,6 +14,7 @@ private:
     cQueue buffer;
     cMessage *endServiceEvent;
     simtime_t serviceTime;
+    bool feedbackSent;
 public:
     Queue();
     virtual ~Queue();
@@ -27,6 +28,7 @@ Define_Module(Queue);
 
 Queue::Queue() {
     endServiceEvent = NULL;
+    feedbackSent = false;
 }
 
 Queue::~Queue() {
@@ -46,7 +48,7 @@ void Queue::finish() {
 }
 
 void Queue::handleMessage(cMessage *msg) {
-
+    bufferSizeQueue.record(buffer.getLength());
     // if msg is signaling an endServiceEvent
     if (msg == endServiceEvent) {
         // if packet in buffer, send next one
@@ -54,13 +56,16 @@ void Queue::handleMessage(cMessage *msg) {
             // dequeue packet
             cPacket *pkt = (cPacket*) buffer.pop();
             // send packet
+            pkt->setKind(1);
             send(pkt, "out");
             // start new service
             serviceTime = pkt->getDuration();
             scheduleAt(simTime() + serviceTime, endServiceEvent);
         }
+        feedbackSent = false;
     } else { // if msg is a data packet
-        const int umbral =  0.80 * par("bufferSize").intValue();        
+        const int umbral =  0.80 * par("bufferSize").intValue();
+        const int umbralMin = 0.25 * par("bufferSize").intValue();        
         if (buffer.getLength() >= par("bufferSize").intValue()) {
             // drop the packet
             delete(msg);
@@ -69,14 +74,21 @@ void Queue::handleMessage(cMessage *msg) {
             packetDropQueue.record(packetDrop);
         }
         else { 
-            if (buffer.getLength() >= umbral)
+            if (buffer.getLength() >= umbral && !feedbackSent)
             {
                 Feedbackpkt *feedbackPkt = new Feedbackpkt();
                 feedbackPkt->setByteLength(20);
                 feedbackPkt->setKind(2);
-                feedbackPkt->setReaminingBufferSize(par("bufferSize").longValue() - buffer.getLength());
                 send(feedbackPkt, "out");
-            }            
+                feedbackSent = true;
+            }else if (buffer.getLength() < umbralMin)
+            {
+                Feedbackpkt *feedbackPkt = new Feedbackpkt();
+                feedbackPkt->setByteLength(20);
+                feedbackPkt->setKind(3);
+                send(feedbackPkt, "out");
+                //feedbackSent = true;
+            }
             // Enqueue the packet
             buffer.insert(msg);
             bufferSizeQueue.record(buffer.getLength());
@@ -85,7 +97,7 @@ void Queue::handleMessage(cMessage *msg) {
                 // start the service
                 scheduleAt(simTime() + 0, endServiceEvent);
             }
-         }
+        }
     }
 }
 

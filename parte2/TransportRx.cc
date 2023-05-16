@@ -15,6 +15,7 @@ class TransportRx: public cSimpleModule {
         cOutVector bufferSizeVec;
         cOutVector pktDrop;
         int pktDropCount;
+        //bool feedbackSent;
 
         void sendPkt();
         void sendFeedback();
@@ -94,15 +95,22 @@ void TransportRx::handleMessage(cMessage *msg) {
         sendFeedback();    
     } else {
         // enqueue the message
-        if (msg->getKind() == 2) {
+        if (msg->getKind() == 1) {
             const int umbral = 0.70 * par("bufferSize").intValue();
+            const int umbralMin = 0.25 * par("bufferSize").intValue();
             if (buffer.getLength() < par("bufferSize").intValue()) {
                 if (buffer.getLength() >= umbral){
                     FeedbackPkt *fPkt = new FeedbackPkt();
                     fPkt->setkind(2);
                     fPkt->setByteLength(1);
                     enqueueFeedback(fPkt);                
-                }
+                }/*else if (buffer.getLength() <= umbralMin)
+                {
+                    FeedbackPkt *fPkt = new FeedbackPkt();
+                    fPkt->setkind(3);
+                    fPkt->setByteLength(1);
+                    enqueueFeedback(fPkt);
+                }*/
                 buffer.insert(msg);
                 if (!endServiceEvent->isScheduled()) {
                     scheduleAt(simTime() + 0, endServiceEvent)
@@ -113,9 +121,10 @@ void TransportRx::handleMessage(cMessage *msg) {
                 pktDrop.record(pktDropCount);
                 delete msg;
             }
-        } else{
+        } else if (msg->getKind() == 2){
             // the message is a feedback packet
             enqueueFeedback(msg);
+            //send(msg, "toOut$o");
         }
     }
 }
