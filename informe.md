@@ -1,7 +1,7 @@
 # Análisis y comparación de protocolos para el control de flujo y congestión en redes utilizando simulación discreta
 
 ## Resumen
-En este informe se analiza y compara un protocolo de control de flujo y congestión en redes de computadoras con el comportamiento de la red sin la utilización del protocolo, utilizando simulación discreta. El protocolo implementado por nosotros es un protocolo simple que llamaremos **"¡Para la mano!"** y los resultados obtenidos muestran un buen desempeño, evitando la perdida de paquetes en los casos de prueba realizados.
+En este informe se analiza y compara un protocolo de control de flujo y congestión en redes de computadoras con el comportamiento de la red sin la utilización del protocolo, utilizando simulación discreta. El protocolo implementado por nosotros es un protocolo simple que llamaremos **"¡Pará la mano!"** y los resultados obtenidos muestran un buen desempeño, evitando la perdida de paquetes en los casos de prueba realizados.
 
 ## Introducción
 
@@ -12,20 +12,21 @@ El problema de **control de flujo** en la capa de transporte surge cuando un emi
 
 El problema de **control de congestión** en la capa de transporte surge cuando un emisor envía datos a una red más rápido de lo que esta puede transmitirlos. La red debe informar al emisor que reduzca la velocidad de envío de datos ya que los datos que no puede transmitir serán descartados y se perderá información.
 
-### Metodología de trabajo 
-Para analizar y comparar el protocolo de control de flujo y congestión con el comportamiento de la red sin la utilización del protocolo, utilizaremos **simulación discreta**. 
+### Metodología de trabajo
+Para analizar y comparar el protocolo de control de flujo y congestión con el comportamiento de la red sin la utilización del protocolo, utilizaremos **simulación discreta**.
 
-La **simulación discreta** es una técnica de modelado de sistemas dinámicos en la que el tiempo avanza en forma discreta. En este tipo de simulación, el tiempo se divide en intervalos de tiempo y el estado del sistema se actualiza al final de cada intervalo. 
+La **simulación discreta** es una técnica de modelado de sistemas dinámicos en la que el tiempo avanza en forma discreta. En este tipo de simulación, el tiempo se divide en intervalos de tiempo y el estado del sistema se actualiza al final de cada intervalo.
 
-Las simulaciones se realizan en un ordenador mediante **Omnett++**, un entorno de **simulación de eventos discretos**, donde se modela el comportamiento de una red simplificada y se analiza el funcionamiento de la red con y sin el protocolo de control de flujo y congestión. 
+Las simulaciones se realizan en un ordenador mediante **Omnett++**, un entorno de **simulación de eventos discretos**, donde se modela el comportamiento de una red simplificada y se analiza el funcionamiento de la red con y sin el protocolo de control de flujo y congestión.
 
 La ventaja de utilizar simulación discreta es que se puede simular el comportamiento de la red en un tiempo _mucho menor_ al que se tardaría en realizar pruebas en una red real, y se puede analizar el comportamiento de la red en situaciones que serían _muy difíciles_ de simular en una red real. Por esa razón este estilo de simulación es una herramienta muy útil para analizar el comportamiento de una red.
 
 
 ### Análisis de los problemas
 Nosotros evaluaremos el problema de control de flujo y control de congestión mediante 2 casos de pruebas:
-1. Caso 1: Se envían paquetes desde un emisor a un receptor a través de una red con un buffer intermedio. El emisor envía paquetes a una velocidad mayor a la que el receptor puede procesarlos. Este caso es un problema de control de flujo.
-2. Caso 2: Se envían paquetes desde un emisor a un receptor a través de una red con un buffer intermedio. El emisor envía paquetes a una velocidad mayor a la que la red (en este caso el buffer intermedio) puede transmitirlos. Este caso es un problema de control de congestión.
+
+- **Caso 1:** Se envían paquetes desde un emisor a un receptor a través de una red con un buffer intermedio. El emisor envía paquetes a una velocidad mayor a la que el receptor puede procesarlos. Este caso es un problema de control de flujo.
+- **Caso 2:** Se envían paquetes desde un emisor a un receptor a través de una red con un buffer intermedio. El emisor envía paquetes a una velocidad mayor a la que la red (en este caso el buffer intermedio) puede transmitirlos. Este caso es un problema de control de congestión.
 
 
 
@@ -39,9 +40,9 @@ La estructura que utilizaremos para evaluar el comportamiento de la red sin el p
 
 ![estructura red basica](graficos/extra/estructura_red_base.png)
 
-El funcionamiento de la red es muy básico, el generador crea paquetes que envia al queue de Tx, el cual esta conectado a otro queue intermedio, el cual le envia al queue Rx que esta conectado al recolector. 
+El funcionamiento de la red es muy básico, el generador crea paquetes que envia al queue de Tx, el cual esta conectado a otro queue intermedio, el cual le envia al queue Rx que esta conectado al recolector.
 
-Para el caso 1 y caso 2 se modifican las tasas de transferencia de las conexiones entre colas, y los valores que se colocan dependen del caso de prueba que se quiera modelar. 
+Para el caso 1 y caso 2 se modifican las tasas de transferencia de las conexiones entre colas, y los valores que se colocan dependen del caso de prueba que se quiera modelar.
 
 La cola intermedia y la cola Rx tienen un tamaño de buffer de 200 paquetes, y la cola conectada con el generador tiene un tamaño de buffer de 2000000 paquetes. La razón de esto es que no nos interesa evaluar el comportamiento de la red cuando se llena el buffer del generador, ya que eso no es un problema de control de flujo o congestión, sino que es un problema interno/de configuración del generador.
 
@@ -50,13 +51,14 @@ El tamaño de los paquetes en todos los casos de prueba será de 12500 bytes, y 
 ### Caso 1 - Problema de control de flujo
 
 Para este caso se establecieron las siguientes tasas de transferencia:
+
 - Entre la cola Rx y el recolector: 0.5Mbps
 - Entre la cola Tx y la cola intermedia: 1Mbps
 - Entre la cola intermedia y la cola Rx: 1Mbps
 
 Esta claro que la cola Rx es el cuello de botella de la red, ya que es la que tiene la menor tasa de transferencia y recibirá paquetes a una velocidad mayor a la que puede procesarlos.
 
-Se realizaron pruebas variando entre los siguientes intervalos de generación de paquetes: 0.1, 0.15 y 0.2. 
+Se realizaron pruebas variando entre los siguientes intervalos de generación de paquetes: 0.1, 0.15 y 0.2.
 
 Se obtuvieron los siguientes resultados:
 
@@ -80,9 +82,9 @@ Como se puede ver en los gráficos y en la tabla anterior, mientras menor cantid
 
 En los gráficos de tamaño de los buffers podemos ver porque este caso es el relacionado al control de flujo, ya que el buffer del receptor es el que se llena primero, generando el cuello de botella explicado en la introducción. Es más. se puede ver una clara relación entre la demora en entregar el paquete y el tamaño del buffer del receptor en los 3 casos que se analizaron, luego de que el buffer del receptor se llena, la demora en entregar los paquetes aumenta considerablemente.
 
-Tanto con el intervalo de generación de paquetes de 0.1 como con el de 0.15, el buffer del receptor se llena y una vez lleno se mantiene en ese estado hasta que la simulación termina. En el caso de 0.1, el buffer del receptor crece linealmente durante los primeros 35 segundos, que es cuando llega a su máximo tamaño, y luego se mantiene en ese valor hasta que la simulación termina. Podemos ver que la demora de los paquetes también crece linealmente hasta estabilizarse en un valor un poco superior a 40s (de demora en procesar el paquete), que supongo que es lo que debe esperar el paquete numero 200 en que se procesen los anteriores 199 paquetes. 
+Tanto con el intervalo de generación de paquetes de 0.1 como con el de 0.15, el buffer del receptor se llena y una vez lleno se mantiene en ese estado hasta que la simulación termina. En el caso de 0.1, el buffer del receptor crece linealmente durante los primeros 35 segundos, que es cuando llega a su máximo tamaño, y luego se mantiene en ese valor hasta que la simulación termina. Podemos ver que la demora de los paquetes también crece linealmente hasta estabilizarse en un valor un poco superior a 40s (de demora en procesar el paquete), que supongo que es lo que debe esperar el paquete numero 200 en que se procesen los anteriores 199 paquetes.
 
-Sin embargo con el intervalo de generación de paquetes de 0.2, el buffer del receptor no llega a llenarse y como máximo alcanza a tener unos 30~35 paquetes almacenados en el buffer, lo cual es un valor aceptable. 
+Sin embargo con el intervalo de generación de paquetes de 0.2, el buffer del receptor no llega a llenarse y como máximo alcanza a tener unos 30~35 paquetes almacenados en el buffer, lo cual es un valor aceptable.
 
 Como en este caso la velocidad de transmisión entre la cola Tx y la cola intermedia es igual a la velocidad de transmisión entre la cola intermedia y el recolector, el buffer de la cola intermedia no se llena, ya que los paquetes que recibe los transmite a la misma velocidad que los recibe. Esto se puede ver en los gráficos de tamaño de los buffers, donde el buffer de la cola intermedia se mantiene en un valor constante.
 
@@ -91,13 +93,14 @@ Todos los paquetes perdidos son perdidos en el buffer del receptor, ya que es el
 ### Caso 2 - Problema de control de congestión
 
 Para este caso se establecieron las siguientes tasas de transferencia:
+
 - Entre la cola intermedia y la cola Rx: 0.5Mbps
 - Entre la cola Tx y la cola intermedia: 1Mbps
 - Entre la cola Rx y el recolector: 1Mbps
 
 Esta claro que la cola intermedia es el cuello de botella de la red, ya que es la que tiene la menor tasa de transferencia y recibirá paquetes a una velocidad mayor a la que puede procesarlos.
 
-Se realizaron pruebas variando entre los siguientes intervalos de generación de paquetes: 0.1, 0.15 y 0.2. 
+Se realizaron pruebas variando entre los siguientes intervalos de generación de paquetes: 0.1, 0.15 y 0.2.
 
 Se obtuvieron los siguientes resultados:
 
@@ -229,7 +232,7 @@ A continuación se muestra el gráfico de carga ofrecida vs carga útil:
 
 ![Carga ofrecida vs carga útil](graficos/cargas.png)
 
-La carga ofrecida es la cantidad de paquetes que se generan por segundo, mientras que la carga útil es la cantidad de paquetes que llegan a destino por segundo. Como se puede ver, la carga útil es menor a la carga ofrecida, esto se debe a que los paquetes que se generan en la fuente no llegan a destino por diferentes motivos (se pierden en el camino, se almacenan en un buffer, etc). 
+La carga ofrecida es la cantidad de paquetes que se generan por segundo, mientras que la carga útil es la cantidad de paquetes que llegan a destino por segundo. Como se puede ver, la carga útil es menor a la carga ofrecida, esto se debe a que los paquetes que se generan en la fuente no llegan a destino por diferentes motivos (se pierden en el camino, se almacenan en un buffer, etc).
 
 Nos parece un poco raro que los 5 casos que utilizamos para la simulación tengan la misma carga útil, pero creemos que esto se debe a que tanto en la red básica como en la red que utiliza nuestro algoritmo siempre se genera la máxima cantidad de paquetes por segundo y se reciben la máxima cantidad de paquetes por segundo, por lo que la carga útil es la misma en todos los casos. La diferencia entre los casos es que en la red básica se pierden paquetes, mientras que en la red que utiliza nuestro algoritmo se almacenan en el buffer de Tx, pero en ninguno de los 2 casos durante la simulación de los 200s esos paquetes logran llegar al resumidero.
 
@@ -252,3 +255,4 @@ Creemos que el protocolo no se comporta de manera óptima y estamos seguros de q
 - Contenido audiovisual (videos/filminas) provisto por la catedra
 - [Manual de OMNeT++](https://doc.omnetpp.org/omnetpp/manual/)
 - Redes de Computadoras - Libro de Andrew S. Tanenbaum (5ta edición)
+
