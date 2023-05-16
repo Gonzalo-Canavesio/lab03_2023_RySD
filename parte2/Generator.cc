@@ -43,7 +43,7 @@ void Generator::initialize() {
 
 void Generator::finish() {
     recordScalar("TotalTransmissions", transmissionStats.getSum());
-    recordScalar("TotalPackets", packetSent);
+    recordScalar("sentPackets", packetSent);
 }
 
 void Generator::handleMessage(cMessage *msg) {
