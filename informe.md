@@ -203,6 +203,8 @@ Como sucedió en la parte 1, los resultados de este caso 2 son muy similares a l
 
 Para el control de congestión el algoritmo utilizado también funciona correctamente, ya que se evita por completo la perdida de paquetes. La desventaja es que para mantener el buffer de la cola intermedia con una cantidad de paquetes aceptable, se debe disminuir la tasa de transferencia de paquetes, lo que aumenta la cantidad de paquetes en el buffer de la cola Tx. (Análisis similar al caso 1)
 
+El algoritmo funciona de manera similar en ambos casos porque aunque sean diferentes las colas que se saturan, en ambos casos se disminuye la tasa de transferencia de paquetes a la mitad para evitar la saturación de la cola que corresponda, además de que se usan los mismos parametros para ambos casos (0.5Mbps para la cola que debe saturarse y 1Mbps para las otras cola). Consideramos que tiene sentido y es correcto que el algoritmo funcione de manera similar en ambos casos, aunque no significa que se vaya a comportar igual si se cambian los parámetros a unos que sean menos simétricos.
+
 ### Caso 3 - Control de flujo y control de congestión (Extra)
 
 Este tercer caso es un caso combinado que se nos ocurrió para analizar el funcionamiento del algoritmo cuando tenemos ambos problemas en simultaneo (control de flujo y control de congestión). Se modificaron los siguientes parametros:
