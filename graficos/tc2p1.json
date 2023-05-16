@@ -1,9 +1,9 @@
 {
-    "General-0-20230516-15:32:38-1700" : {
+    "General-0-20230516-14:08:11-203" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -11,7 +11,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1700",
+            "processid" : "203",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -123,7 +123,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -220,7 +220,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -274,11 +274,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1702" : {
+    "General-0-20230516-14:08:11-205" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -286,7 +286,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1702",
+            "processid" : "205",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -398,7 +398,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -495,7 +495,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -549,11 +549,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1704" : {
+    "General-0-20230516-14:08:11-207" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -561,7 +561,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1704",
+            "processid" : "207",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -673,7 +673,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -770,7 +770,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -824,11 +824,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1706" : {
+    "General-0-20230516-14:08:11-209" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -836,7 +836,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1706",
+            "processid" : "209",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -948,7 +948,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1045,7 +1045,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1099,11 +1099,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1708" : {
+    "General-0-20230516-14:08:11-211" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -1111,7 +1111,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1708",
+            "processid" : "211",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -1223,7 +1223,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1320,7 +1320,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1374,11 +1374,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1710" : {
+    "General-0-20230516-14:08:11-213" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -1386,7 +1386,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1710",
+            "processid" : "213",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -1498,7 +1498,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1595,7 +1595,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1649,11 +1649,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1712" : {
+    "General-0-20230516-14:08:11-215" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -1661,7 +1661,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1712",
+            "processid" : "215",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -1773,7 +1773,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1870,7 +1870,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -1924,11 +1924,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1714" : {
+    "General-0-20230516-14:08:11-217" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -1936,7 +1936,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1714",
+            "processid" : "217",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -2048,7 +2048,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2145,7 +2145,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2199,11 +2199,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1716" : {
+    "General-0-20230516-14:08:11-219" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -2211,7 +2211,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1716",
+            "processid" : "219",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -2323,7 +2323,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2420,7 +2420,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2474,11 +2474,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1718" : {
+    "General-0-20230516-14:08:11-221" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -2486,7 +2486,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1718",
+            "processid" : "221",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -2598,7 +2598,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2695,7 +2695,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2749,11 +2749,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1720" : {
+    "General-0-20230516-14:08:11-223" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -2761,7 +2761,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1720",
+            "processid" : "223",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -2873,7 +2873,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -2970,7 +2970,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3024,11 +3024,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1722" : {
+    "General-0-20230516-14:08:11-225" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -3036,7 +3036,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1722",
+            "processid" : "225",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -3148,7 +3148,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3245,7 +3245,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3299,11 +3299,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1724" : {
+    "General-0-20230516-14:08:11-227" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -3311,7 +3311,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1724",
+            "processid" : "227",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -3423,7 +3423,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3520,7 +3520,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3574,11 +3574,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1726" : {
+    "General-0-20230516-14:08:11-229" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -3586,7 +3586,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1726",
+            "processid" : "229",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -3698,7 +3698,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3795,7 +3795,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -3849,11 +3849,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1728" : {
+    "General-0-20230516-14:08:11-231" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -3861,7 +3861,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1728",
+            "processid" : "231",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -3973,7 +3973,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4070,7 +4070,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4124,11 +4124,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1730" : {
+    "General-0-20230516-14:08:11-233" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -4136,7 +4136,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1730",
+            "processid" : "233",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -4248,7 +4248,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4345,7 +4345,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4399,11 +4399,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1732" : {
+    "General-0-20230516-14:08:11-235" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -4411,7 +4411,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1732",
+            "processid" : "235",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -4523,7 +4523,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4620,7 +4620,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4674,11 +4674,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1734" : {
+    "General-0-20230516-14:08:11-237" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -4686,7 +4686,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1734",
+            "processid" : "237",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -4798,7 +4798,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4895,7 +4895,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -4949,11 +4949,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1736" : {
+    "General-0-20230516-14:08:11-239" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -4961,7 +4961,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1736",
+            "processid" : "239",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -5073,7 +5073,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5170,7 +5170,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5224,11 +5224,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1738" : {
+    "General-0-20230516-14:08:11-241" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -5236,7 +5236,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1738",
+            "processid" : "241",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -5348,7 +5348,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5445,7 +5445,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5499,11 +5499,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1740" : {
+    "General-0-20230516-14:08:11-243" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -5511,7 +5511,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1740",
+            "processid" : "243",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -5623,7 +5623,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5720,7 +5720,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5774,11 +5774,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1742" : {
+    "General-0-20230516-14:08:11-245" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -5786,7 +5786,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1742",
+            "processid" : "245",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -5898,7 +5898,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -5995,7 +5995,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6049,11 +6049,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1744" : {
+    "General-0-20230516-14:08:11-247" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -6061,7 +6061,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1744",
+            "processid" : "247",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -6173,7 +6173,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6270,7 +6270,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6324,11 +6324,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1746" : {
+    "General-0-20230516-14:08:11-249" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -6336,7 +6336,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1746",
+            "processid" : "249",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -6448,7 +6448,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6545,7 +6545,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6599,11 +6599,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1748" : {
+    "General-0-20230516-14:08:11-251" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -6611,7 +6611,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1748",
+            "processid" : "251",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -6723,7 +6723,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6820,7 +6820,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -6874,11 +6874,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1750" : {
+    "General-0-20230516-14:08:11-253" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -6886,7 +6886,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1750",
+            "processid" : "253",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -6998,7 +6998,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7095,7 +7095,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7149,11 +7149,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1752" : {
+    "General-0-20230516-14:08:11-255" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -7161,7 +7161,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1752",
+            "processid" : "255",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -7273,7 +7273,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7370,7 +7370,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7424,11 +7424,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1754" : {
+    "General-0-20230516-14:08:11-257" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -7436,7 +7436,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1754",
+            "processid" : "257",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -7548,7 +7548,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7645,7 +7645,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7699,11 +7699,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1756" : {
+    "General-0-20230516-14:08:11-259" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -7711,7 +7711,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1756",
+            "processid" : "259",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -7823,7 +7823,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7920,7 +7920,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -7974,11 +7974,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1758" : {
+    "General-0-20230516-14:08:11-261" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -7986,7 +7986,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1758",
+            "processid" : "261",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -8098,7 +8098,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8195,7 +8195,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8249,11 +8249,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1760" : {
+    "General-0-20230516-14:08:11-263" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -8261,7 +8261,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1760",
+            "processid" : "263",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -8373,7 +8373,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8470,7 +8470,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8524,11 +8524,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1762" : {
+    "General-0-20230516-14:08:11-265" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -8536,7 +8536,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1762",
+            "processid" : "265",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -8648,7 +8648,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8745,7 +8745,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -8799,11 +8799,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1764" : {
+    "General-0-20230516-14:08:11-267" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -8811,7 +8811,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1764",
+            "processid" : "267",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -8923,7 +8923,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9020,7 +9020,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9074,11 +9074,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1766" : {
+    "General-0-20230516-14:08:11-269" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -9086,7 +9086,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1766",
+            "processid" : "269",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -9198,7 +9198,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9295,7 +9295,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9349,11 +9349,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1768" : {
+    "General-0-20230516-14:08:11-271" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -9361,7 +9361,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1768",
+            "processid" : "271",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -9473,7 +9473,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9570,7 +9570,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9624,11 +9624,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1770" : {
+    "General-0-20230516-14:08:11-273" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -9636,7 +9636,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1770",
+            "processid" : "273",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -9748,7 +9748,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9845,7 +9845,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -9899,11 +9899,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1772" : {
+    "General-0-20230516-14:08:11-275" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -9911,7 +9911,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1772",
+            "processid" : "275",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -10023,7 +10023,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10120,7 +10120,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10174,11 +10174,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1774" : {
+    "General-0-20230516-14:08:11-277" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -10186,7 +10186,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1774",
+            "processid" : "277",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -10298,7 +10298,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10395,7 +10395,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10449,11 +10449,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1776" : {
+    "General-0-20230516-14:08:11-279" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -10461,7 +10461,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1776",
+            "processid" : "279",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -10573,7 +10573,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10670,7 +10670,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10724,11 +10724,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1778" : {
+    "General-0-20230516-14:08:11-281" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -10736,7 +10736,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1778",
+            "processid" : "281",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -10848,7 +10848,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10945,7 +10945,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -10999,11 +10999,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1780" : {
+    "General-0-20230516-14:08:11-283" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -11011,7 +11011,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1780",
+            "processid" : "283",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -11123,7 +11123,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11220,7 +11220,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11274,11 +11274,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1782" : {
+    "General-0-20230516-14:08:11-285" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -11286,7 +11286,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1782",
+            "processid" : "285",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -11398,7 +11398,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11495,7 +11495,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11549,11 +11549,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1784" : {
+    "General-0-20230516-14:08:11-287" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -11561,7 +11561,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1784",
+            "processid" : "287",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -11673,7 +11673,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11770,7 +11770,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -11824,11 +11824,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1786" : {
+    "General-0-20230516-14:08:11-289" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -11836,7 +11836,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1786",
+            "processid" : "289",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -11948,7 +11948,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12045,7 +12045,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12099,11 +12099,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1788" : {
+    "General-0-20230516-14:08:11-291" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -12111,7 +12111,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1788",
+            "processid" : "291",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -12223,7 +12223,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12320,7 +12320,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12374,11 +12374,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1790" : {
+    "General-0-20230516-14:08:11-293" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -12386,7 +12386,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1790",
+            "processid" : "293",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -12498,7 +12498,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12595,7 +12595,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12649,11 +12649,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:38-1792" : {
+    "General-0-20230516-14:08:11-295" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:38",
-            "datetimef" : "20230516-153238",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -12661,7 +12661,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1792",
+            "processid" : "295",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -12773,7 +12773,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12870,7 +12870,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -12924,11 +12924,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1794" : {
+    "General-0-20230516-14:08:11-297" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -12936,7 +12936,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1794",
+            "processid" : "297",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -13048,7 +13048,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13145,7 +13145,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13199,11 +13199,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1796" : {
+    "General-0-20230516-14:08:11-299" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -13211,7 +13211,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1796",
+            "processid" : "299",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -13323,7 +13323,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13420,7 +13420,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13474,11 +13474,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1798" : {
+    "General-0-20230516-14:08:11-301" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -13486,7 +13486,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1798",
+            "processid" : "301",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -13598,7 +13598,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13695,7 +13695,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13749,11 +13749,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1800" : {
+    "General-0-20230516-14:08:11-303" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -13761,7 +13761,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1800",
+            "processid" : "303",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -13873,7 +13873,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -13970,7 +13970,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14024,11 +14024,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1802" : {
+    "General-0-20230516-14:08:11-305" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -14036,7 +14036,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1802",
+            "processid" : "305",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -14148,7 +14148,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14245,7 +14245,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14299,11 +14299,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1804" : {
+    "General-0-20230516-14:08:11-307" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -14311,7 +14311,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1804",
+            "processid" : "307",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -14423,7 +14423,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14520,7 +14520,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14574,11 +14574,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1806" : {
+    "General-0-20230516-14:08:11-309" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -14586,7 +14586,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1806",
+            "processid" : "309",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -14698,7 +14698,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14795,7 +14795,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -14849,11 +14849,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1808" : {
+    "General-0-20230516-14:08:11-311" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -14861,7 +14861,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1808",
+            "processid" : "311",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -14973,7 +14973,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15070,7 +15070,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15124,11 +15124,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1810" : {
+    "General-0-20230516-14:08:11-313" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:11",
+            "datetimef" : "20230516-140811",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -15136,7 +15136,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1810",
+            "processid" : "313",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -15248,7 +15248,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15345,7 +15345,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15399,11 +15399,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1812" : {
+    "General-0-20230516-14:08:12-315" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -15411,7 +15411,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1812",
+            "processid" : "315",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -15523,7 +15523,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15620,7 +15620,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15674,11 +15674,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1814" : {
+    "General-0-20230516-14:08:12-317" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -15686,7 +15686,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1814",
+            "processid" : "317",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -15798,7 +15798,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15895,7 +15895,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -15949,11 +15949,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1816" : {
+    "General-0-20230516-14:08:12-319" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -15961,7 +15961,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1816",
+            "processid" : "319",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -16073,7 +16073,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16170,7 +16170,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16224,11 +16224,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1818" : {
+    "General-0-20230516-14:08:12-321" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -16236,7 +16236,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1818",
+            "processid" : "321",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -16348,7 +16348,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16445,7 +16445,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16499,11 +16499,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1820" : {
+    "General-0-20230516-14:08:12-323" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -16511,7 +16511,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1820",
+            "processid" : "323",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -16623,7 +16623,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16720,7 +16720,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16774,11 +16774,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1822" : {
+    "General-0-20230516-14:08:12-325" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -16786,7 +16786,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1822",
+            "processid" : "325",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -16898,7 +16898,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -16995,7 +16995,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17049,11 +17049,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1824" : {
+    "General-0-20230516-14:08:12-327" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -17061,7 +17061,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1824",
+            "processid" : "327",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -17173,7 +17173,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17270,7 +17270,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17324,11 +17324,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1826" : {
+    "General-0-20230516-14:08:12-329" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -17336,7 +17336,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1826",
+            "processid" : "329",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -17448,7 +17448,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17545,7 +17545,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17599,11 +17599,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1828" : {
+    "General-0-20230516-14:08:12-331" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -17611,7 +17611,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1828",
+            "processid" : "331",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -17723,7 +17723,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17820,7 +17820,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -17874,11 +17874,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1830" : {
+    "General-0-20230516-14:08:12-333" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -17886,7 +17886,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1830",
+            "processid" : "333",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -17998,7 +17998,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18095,7 +18095,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18149,11 +18149,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1832" : {
+    "General-0-20230516-14:08:12-335" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -18161,7 +18161,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1832",
+            "processid" : "335",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -18273,7 +18273,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18370,7 +18370,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18424,11 +18424,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1834" : {
+    "General-0-20230516-14:08:12-337" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -18436,7 +18436,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1834",
+            "processid" : "337",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -18548,7 +18548,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18645,7 +18645,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18699,11 +18699,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1836" : {
+    "General-0-20230516-14:08:12-339" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -18711,7 +18711,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1836",
+            "processid" : "339",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -18823,7 +18823,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18920,7 +18920,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -18974,11 +18974,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1838" : {
+    "General-0-20230516-14:08:12-341" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -18986,7 +18986,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1838",
+            "processid" : "341",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -19098,7 +19098,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19195,7 +19195,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19249,11 +19249,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1840" : {
+    "General-0-20230516-14:08:12-343" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -19261,7 +19261,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1840",
+            "processid" : "343",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -19373,7 +19373,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19470,7 +19470,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19524,11 +19524,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1842" : {
+    "General-0-20230516-14:08:12-345" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -19536,7 +19536,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1842",
+            "processid" : "345",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -19648,7 +19648,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19745,7 +19745,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -19799,11 +19799,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1844" : {
+    "General-0-20230516-14:08:12-347" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -19811,7 +19811,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1844",
+            "processid" : "347",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -19923,7 +19923,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20020,7 +20020,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20074,11 +20074,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1846" : {
+    "General-0-20230516-14:08:12-349" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -20086,7 +20086,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1846",
+            "processid" : "349",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -20198,7 +20198,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20295,7 +20295,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20349,11 +20349,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1848" : {
+    "General-0-20230516-14:08:12-351" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -20361,7 +20361,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1848",
+            "processid" : "351",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -20473,7 +20473,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20570,7 +20570,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20624,11 +20624,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1850" : {
+    "General-0-20230516-14:08:12-353" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -20636,7 +20636,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1850",
+            "processid" : "353",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -20748,7 +20748,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20845,7 +20845,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -20899,11 +20899,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1852" : {
+    "General-0-20230516-14:08:12-355" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -20911,7 +20911,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1852",
+            "processid" : "355",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -21023,7 +21023,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21120,7 +21120,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21174,11 +21174,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1854" : {
+    "General-0-20230516-14:08:12-357" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -21186,7 +21186,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1854",
+            "processid" : "357",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -21298,7 +21298,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21395,7 +21395,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21449,11 +21449,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1856" : {
+    "General-0-20230516-14:08:12-359" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -21461,7 +21461,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1856",
+            "processid" : "359",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -21573,7 +21573,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21670,7 +21670,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21724,11 +21724,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1858" : {
+    "General-0-20230516-14:08:12-361" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -21736,7 +21736,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1858",
+            "processid" : "361",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -21848,7 +21848,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21945,7 +21945,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -21999,11 +21999,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1860" : {
+    "General-0-20230516-14:08:12-363" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -22011,7 +22011,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1860",
+            "processid" : "363",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -22123,7 +22123,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22220,7 +22220,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22274,11 +22274,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1862" : {
+    "General-0-20230516-14:08:12-365" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -22286,7 +22286,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1862",
+            "processid" : "365",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -22398,7 +22398,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22495,7 +22495,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22549,11 +22549,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1864" : {
+    "General-0-20230516-14:08:12-367" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -22561,7 +22561,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1864",
+            "processid" : "367",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -22673,7 +22673,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22770,7 +22770,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -22824,11 +22824,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1866" : {
+    "General-0-20230516-14:08:12-369" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -22836,7 +22836,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1866",
+            "processid" : "369",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -22948,7 +22948,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23045,7 +23045,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23099,11 +23099,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1868" : {
+    "General-0-20230516-14:08:12-371" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -23111,7 +23111,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1868",
+            "processid" : "371",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -23223,7 +23223,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23320,7 +23320,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23374,11 +23374,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1870" : {
+    "General-0-20230516-14:08:12-373" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -23386,7 +23386,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1870",
+            "processid" : "373",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -23498,7 +23498,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23595,7 +23595,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23649,11 +23649,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1872" : {
+    "General-0-20230516-14:08:12-375" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -23661,7 +23661,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1872",
+            "processid" : "375",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -23773,7 +23773,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23870,7 +23870,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -23924,11 +23924,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1874" : {
+    "General-0-20230516-14:08:12-377" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -23936,7 +23936,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1874",
+            "processid" : "377",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -24048,7 +24048,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24145,7 +24145,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24199,11 +24199,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1876" : {
+    "General-0-20230516-14:08:12-379" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -24211,7 +24211,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1876",
+            "processid" : "379",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -24323,7 +24323,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24420,7 +24420,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24474,11 +24474,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1878" : {
+    "General-0-20230516-14:08:12-381" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -24486,7 +24486,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1878",
+            "processid" : "381",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -24598,7 +24598,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24695,7 +24695,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24749,11 +24749,11 @@
             }
         ]
     },
-    "General-0-20230516-15:32:39-1880" : {
+    "General-0-20230516-14:08:12-383" : {
         "attributes" : {
             "configname" : "General",
-            "datetime" : "20230516-15:32:39",
-            "datetimef" : "20230516-153239",
+            "datetime" : "20230516-14:08:12",
+            "datetimef" : "20230516-140812",
             "experiment" : "General",
             "inifile" : "parte1/extra.ini",
             "iterationvars" : "",
@@ -24761,7 +24761,7 @@
             "iterationvarsf" : "",
             "measurement" : "",
             "network" : "Network",
-            "processid" : "1880",
+            "processid" : "383",
             "repetition" : "0",
             "replication" : "#0",
             "resultdir" : "results",
@@ -24873,7 +24873,7 @@
             {
                 "module" : "Network.queue.out.channel",
                 "name" : "datarate",
-                "value" : "1e+06bps",
+                "value" : "500000bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
@@ -24970,7 +24970,7 @@
             {
                 "module" : "Network.nodeRx.queue.out.channel",
                 "name" : "datarate",
-                "value" : "500000bps",
+                "value" : "1e+06bps",
                 "attributes" : {
                     "mutable" : "",
                     "unit" : "bps"
