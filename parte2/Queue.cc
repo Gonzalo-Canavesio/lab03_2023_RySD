@@ -27,7 +27,6 @@ Define_Module(Queue);
 
 Queue::Queue() {
     endServiceEvent = NULL;
-    feedbackSent = false;
 }
 
 Queue::~Queue() {
@@ -60,9 +59,7 @@ void Queue::handleMessage(cMessage *msg) {
             serviceTime = pkt->getDuration();
             scheduleAt(simTime() + serviceTime, endServiceEvent);
         }
-    } else { // if msg is a data packet
-        const int umbral =  0.80 * par("bufferSize").intValue();
-        const int umbralMin = 0.25 * par("bufferSize").intValue();        
+    } else { // if msg is a data packet    
         if (buffer.getLength() >= par("bufferSize").intValue()) {
             // drop the packet
             delete(msg);
@@ -70,12 +67,14 @@ void Queue::handleMessage(cMessage *msg) {
             packetDropQueue.record(1);
         }
         else {
-            if (buffer.getLength() >= umbral && !feedbackSent)
-             {
+            const int umbral =  0.80 * par("bufferSize").intValue();
+            const int umbralMin = 0.25 * par("bufferSize").intValue();    
+
+            if (buffer.getLength() >= umbral && !feedbackSent){
                 cPacket *feedbackPkt = new cPacket("packet");
                 feedbackPkt->setByteLength(20);
                 feedbackPkt->setKind(2);
-                send(feedbackPkt, "out");
+                buffer.insertBefore(buffer.front(), feedbackPkt);
                 feedbackSent = true;
             }else if (buffer.getLength() < umbralMin && feedbackSent)
             {

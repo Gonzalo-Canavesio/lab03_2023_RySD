@@ -59,7 +59,7 @@ Se obtuvieron los siguientes resultados:
 | 0.15                                | 1307              | 998               | 108                 | 23.628 s         |
 | 0.2                                 | 989               | 976                | 0                 | 2.398 s         |
 
-La suma entre la cantidad de paquetes recibidos y la cantidad de paquetes dropeados es menor a la cantidad de paquetes enviados. Esto se debe a que al finalizar la simulación, los paquetes que no llegaron a destino y los que estaban en transito no son contabilizados ni como paquetes dropeados ni como paquetes recibidos.
+La suma entre la cantidad de paquetes recibidos y la cantidad de paquetes dropeados es menor a la cantidad de paquetes enviados. Esto se debe a que al finalizar la simulación, los paquetes que no llegaron a destino por estar almacenados en un buffer intermedio (o estarse transmitiendo en ese momento) no son contabilizados ni como paquetes dropeados ni como paquetes recibidos.
 
 A continuación gráficos que representan el comportamiento de la red en el caso 1, variando el intervalo de generación de paquetes:
 
@@ -84,11 +84,34 @@ En los gráficos de tamaño de los buffers podemos ver porque el caso 1 es el re
 [RESPONDER CONSIGAS DEL ENUNCIADO]
 
 ## Métodos
-[COMPLETAR AGREGANDO DESCRIPCIÓN DEL ALGORITMO PROPUESTO Y CUAL ES EL COMPORTAMIENTO ESPERADO Y PORQUE DEBERIA FUNCIONAR]
+
+El algoritmo que proponemos para resolver ambos problemas es el siguiente:
+Cuando algún nodo de la red (el queue intermedio o el queue Rx) detecta que su buffer está cerca de llenarse, envía un aviso al nodo emisor (en este caso el queue Tx) para que disminuya la tasa de transferencia de paquetes. El nodo emisor recibe el aviso y disminuye la tasa de transferencia de paquetes a la mitad. Cuando el nodo que envió el aviso detecta que su buffer está en un nivel aceptable, envía un aviso al nodo emisor para que aumente la tasa de transferencia de paquetes nuevamente. El nodo emisor recibe el aviso y aumenta la tasa de transferencia de paquetes al doble. Este proceso se repite hasta que la simulación finaliza.
+
+Suponemos que el nodo emisor tiene un buffer infinito (o muy grande), por lo que no se puede llenar. Por lo tanto, el nodo emisor no envía avisos a ningún otro nodo de la red.
+
+Esperamos que con este algoritmo se resuelvan los problemas de control de flujo y de control de congestión, ya que al disminuir la tasa de transferencia de paquetes cuando el buffer está cerca de llenarse, se evita que se llene y se generen perdidas de paquetes. Además, al disminuir la tasa de transferencia de paquetes, se disminuye la cantidad de paquetes en la red, por lo que se evita que se genere congestión en la red.
+
+Para que esta solución pueda llevarse a cabo, ese necesario un canal de feedback entre los nodos de la red. Por ello la estructura de la red se vio modificada y quedo de la siguiente manera:
+
+![](graficos/extra/estructura_red_nueva.png)
+
+### Implementación
+
+Para poder implementar el algoritmo propuesto, además de la modificación recientemente mostrada, se tuvieron que realizar las siguientes modificaciones:
+- En las colas queue_0 y la cola TrRx se agregó un campo de tipo bool que informa si se envio un aviso al nodo emisor para que disminuya la tasa de transferencia de paquetes.
+- Se estableció el umbral máximo al 80% para enviar el aviso de disminuir la tasa de transmisión al nodo emisor.
+- Se estableció el umbral mínimo al 30% para enviar el aviso de aumentar la tasa de transmisión al nodo emisor.
+- Se utiliza la función `setKind` para modificar el tipo de paquete que se envía al nodo emisor, de esta manera el nodo emisor sabe si debe aumentar o disminuir la tasa de transferencia de paquetes. En esta implementación los paquetes de tipo 2 son los que indican que se debe disminuir la tasa de transferencia de paquetes y los paquetes de tipo 3 son los que indican que se debe aumentar la tasa de transferencia de paquetes.
+- Se modificó el método `handleMessage` de los nodos queue_0 y TrRx para que envíen el aviso al nodo emisor cuando corresponda.
+- Como el nodo queue_0 no tiene un canal de feedback con el nodo emisor, el aviso se envia al nodo TrRx, que es el que tiene el canal de feedback con el nodo emisor. Cuando el nodo TrRx recibe un paquete de tipo 2 o tipo 3 lo envía al nodo emisor mediante el canal de feedback que utiliza a la queue_1. Luego el nodo emisor recibe el paquete y aumenta o disminuye la tasa de transferencia de paquetes según corresponda.
+
+
 
 ## Resultados
 [COMPLETAR AGREGANDO RESULTADOS DE LA SIMULACION Y COMPARACION DE LOS RESULTADOS CON EL COMPORTAMIENTO ESPERADO Y CON EL COMPORTAMIENTO SIN EL PROTOCOLO]
 [COLOCAR RESULTADOS PRELIMINARES, PEQUEÑAS MODIFICACIONES QUE SE HICIERON AL ALGORITMO Y RESULTADOS FINALES]
+[PONER RESULTADOS CASO 3]
 
 ## Discusión
 [COMPLETAR CON LOGROS, DIFICULTADES, LIMITACIONES Y POSIBLES MEJORAS DEL PROTOCOLO]

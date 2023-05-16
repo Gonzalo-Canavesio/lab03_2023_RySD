@@ -88,9 +88,9 @@ module NodeRx
             in --> TrRx.toOut$i;
             TrRx.toOut$o --> out;
             //case study 1;
-            TrRx.toApp --> { datarate = 0.5Mbps; } --> sink.in;
+            //TrRx.toApp --> { datarate = 0.5Mbps; } --> sink.in;
             //case study 2;
-            //TrRx.toApp --> { datarate = 1Mbps; } --> sink.in;
+            TrRx.toApp --> { datarate = 1Mbps; } --> sink.in;
 }
 
 network Network
@@ -116,9 +116,9 @@ network Network
     connections:
         nodeTx.out --> { datarate = 1Mbps; delay = 100us; } --> queue_0.in;
         //case study 1;
-        queue_0.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
+        //queue_0.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
         //case study 2;
-        //queue_0.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
+        queue_0.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
         
         
         nodeRx.out --> { datarate = 0.5Mbps; delay = 100us; } --> queue_1.in;

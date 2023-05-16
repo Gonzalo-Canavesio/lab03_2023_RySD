@@ -73,7 +73,7 @@ void TransportRx::handleMessage(cMessage *msg) {
         if (!feedbackBuffer.isEmpty()) {
             // if the feedback buffer is not empty, send next one
             cPacket *pkt = (cPacket*) feedbackBuffer.pop();
-                send(pkt, "toApp");
+                send(pkt, "toOut$o");
                 scheduleAt(simTime() + pkt->getDuration(), endFeedbackEvent);
         }
     } else { // if msg is a data packet
