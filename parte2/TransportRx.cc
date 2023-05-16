@@ -8,18 +8,15 @@ using namespace omnetpp;
 
 class TransportRx: public cSimpleModule {
     private:
+        cOutVector bufferSizeQueue;
+        cOutVector packetDropQueue;
         cQueue buffer;
         cQueue feedbackBuffer;
         cMessage *endServiceEvent;
         cMessage *endFeedbackEvent;
-        cOutVector bufferSizeVec;
-        cOutVector pktDrop;
-        int pktDropCount;
-        //bool feedbackSent;
+        simtime_t serviceTime;
+        bool feedbackSent;
 
-        void sendPkt();
-        void sendFeedback();
-        void enqueueFeedback(cMessage *msg);
     public:
         TransportRx();
         virtual ~TransportRx();
@@ -43,89 +40,85 @@ TransportRx::~TransportRx() {
 }
 
 void TransportRx::initialize() {
-    buffer.setName("Receptor buffer");
-    feedbackBuffer.setName("Feedback buffer");    
-    bufferSizeVec.setName("BufferSize");
-    pktDrop.setName("Packet Drop");
-    pktDropCount = 0;
+    buffer.setName("buffer");
+    bufferSizeQueue.setName("BufferSizeQueue");
+    packetDropQueue.setName("PacketDropQueue");
+    feedbackBuffer.setName("bufferFeedback");
+    packetDropQueue.record(0);
     endServiceEvent = new cMessage("endService");
     endFeedbackEvent = new cMessage("endFeedback");
+    feedbackSent = false;
 }
 
 void TransportRx::finish() {
-    recordScalar("PacketDrop", pktDropCount);
 }
 
-void TransportRx::sendPkt() {
-    if (!buffer.isEmpty()) {
-        // if packet in buffer, send next one
-            cPacket *pkt = (cPacket*) buffer.pop();
-            send(pkt, "toApp");
-            scheduleAt(simTime() + pkt->getDuration(), endServiceEvent);
-    }
-}
-
-void TransportRx::enqueueFeedback(cMessage *msg){
-    if (feedbackBuffer.getLength() < par("feedbackBufferSize").intValue()) {
-            feedbackBuffer.insert(msg);
-            if (!endFeedbackEvent->isScheduled()) {
-                scheduleAt(simTime() + 0, endFeedbackEvent);
-            }
-        } else {
-            delete msg;
-        }
-}
-
-void TransportRx::sendFeedback() {
-    if (!feedbackBuffer.isEmpty()) {
-        // if the feedback buffer is not empty, send next one
-            FeedbackPkt *pkt = (FeedbackPkt*) feedbackBuffer.pop();
-            send(pkt, "toOut$o");
-            scheduleAt(simTime() + pkt->getDuration(), endFeedbackEvent);
-    }
-}
 
 void TransportRx::handleMessage(cMessage *msg) {
-    bufferSizeVec.record(buffer.getLength());
+
+    // if msg is signaling an endServiceEvent
     if (msg == endServiceEvent) {
-        // the message is endServiceEvent
-        sendPkt();    
-    } else if (msg == endFeedbackEvent) {
+        // if packet in buffer, send next one
+        if (!buffer.isEmpty()) {
+            // dequeue packet
+            cPacket *pkt = (cPacket*) buffer.pop();
+            // send packet
+            send(pkt, "toApp");
+            // start new service
+            serviceTime = pkt->getDuration();
+            scheduleAt(simTime() + serviceTime, endServiceEvent);
+        }
+    } else  if(msg == endFeedbackEvent){
         // the message is endFeedbackEvent
-        sendFeedback();    
-    } else {
-        // enqueue the message
-        if (msg->getKind() == 1) {
-            const int umbral = 0.70 * par("bufferSize").intValue();
-            const int umbralMin = 0.25 * par("bufferSize").intValue();
-            if (buffer.getLength() < par("bufferSize").intValue()) {
-                if (buffer.getLength() >= umbral){
-                    FeedbackPkt *fPkt = new FeedbackPkt();
-                    fPkt->setkind(2);
-                    fPkt->setByteLength(1);
-                    enqueueFeedback(fPkt);                
-                }/*else if (buffer.getLength() <= umbralMin)
-                {
-                    FeedbackPkt *fPkt = new FeedbackPkt();
-                    fPkt->setkind(3);
-                    fPkt->setByteLength(1);
-                    enqueueFeedback(fPkt);
-                }*/
-                buffer.insert(msg);
-                if (!endServiceEvent->isScheduled()) {
-                    scheduleAt(simTime() + 0, endServiceEvent)
+        if (!feedbackBuffer.isEmpty()) {
+            // if the feedback buffer is not empty, send next one
+            cPacket *pkt = (cPacket*) feedbackBuffer.pop();
+                send(pkt, "toApp");
+                scheduleAt(simTime() + pkt->getDuration(), endFeedbackEvent);
+        }
+    } else { // if msg is a data packet
+        if (buffer.getLength() >= par("bufferSize").intValue()) {
+            // drop the packet
+            delete(msg);
+            this->bubble("packet-dropped");
+            packetDropQueue.record(1);
+        } else {
+            // enqueue the message
+            if (msg->getKind() == 2 || msg->getKind() == 3){
+                feedbackBuffer.insert(msg);
+
+                if (!endFeedbackEvent->isScheduled()) {
+                    // If there are no messages being sent, send this one now
+                    scheduleAt(simTime() + 0, endFeedbackEvent);
                 }
             } else {
-                this->bubble("Packet dropped");
-                pktDropCount++;
-                pktDrop.record(pktDropCount);
-                delete msg;
+                float umbral = 0.80 * par("bufferSize").intValue();
+                float umbralMin = 0.25 * par("bufferSize").intValue();
+
+                if (buffer.getLength() >= umbral && !feedbackSent){
+                    cPacket *feedbackPkt = new cPacket("packet");
+                    feedbackPkt->setByteLength(20);
+                    feedbackPkt->setKind(2);
+                    send(feedbackPkt, "toOut$o");
+                    feedbackSent = true;
+                }else if (buffer.getLength() < umbralMin && feedbackSent){
+                    cPacket *feedbackPkt = new cPacket("packet");
+                    feedbackPkt->setByteLength(20);
+                    feedbackPkt->setKind(3);
+                    send(feedbackPkt, "toOut$o");
+                    feedbackSent = false;
+                }
+                // Enqueue the packet
+                buffer.insert(msg);
+                bufferSizeQueue.record(buffer.getLength());
+                // if the server is idle
+                if (!endServiceEvent->isScheduled()) {
+                    // start the service
+                    scheduleAt(simTime() + 0, endServiceEvent);
+                }
             }
-        } else if (msg->getKind() == 2){
-            // the message is a feedback packet
-            enqueueFeedback(msg);
-            //send(msg, "toOut$o");
         }
     }
 }
+
 #endif

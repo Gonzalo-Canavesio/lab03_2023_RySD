@@ -34,7 +34,7 @@ simple TransportTx
         @display("i=block/queue;q=buffer");
     gates:
         input toApp;
-        output toOut;
+        inout toOut;
 }
 
 simple TransportRx
@@ -43,8 +43,8 @@ simple TransportRx
         int bufferSize;
         @display("i=block/queue;q=buffer");
     gates:
-        input toApp;
-        output toOut;
+        output toApp;
+        inout toOut;
 }
 
 module NodeTx
@@ -107,7 +107,7 @@ network Network
         }
         queue_1: Queue {
             parameters:
-                @display("p=230,30");
+                @display("p=130,90");
         }    
         nodeRx: NodeRx {
             parameters:
@@ -119,6 +119,8 @@ network Network
         queue_0.out --> { datarate = 1Mbps; delay = 100us; } --> nodeRx.in;
         //case study 2;
         //queue_0.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeRx.in;
+        
+        
         nodeRx.out --> { datarate = 0.5Mbps; delay = 100us; } --> queue_1.in;
         queue_1.out --> { datarate = 0.5Mbps; delay = 100us; } --> nodeTx.in;
 }

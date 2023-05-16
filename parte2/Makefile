@@ -1,5 +1,5 @@
 #
-# OMNeT++/OMNEST Makefile for lab3-kickstarter
+# OMNeT++/OMNEST Makefile for lab3
 #
 # This file was generated with the command:
 #  opp_makemake -f --deep -O out -I.
@@ -7,7 +7,7 @@
 
 # Name of target to be created (-o option)
 TARGET_DIR = .
-TARGET_NAME = lab3-kickstarter$(D)
+TARGET_NAME = lab3$(D)
 TARGET = $(TARGET_NAME)$(EXE_SUFFIX)
 TARGET_IMPLIB = $(TARGET_NAME)$(IMPLIB_SUFFIX)
 TARGET_IMPDEF = $(TARGET_NAME)$(IMPDEF_SUFFIX)
@@ -33,7 +33,7 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS = $O/Generator.o $O/Queue.o $O/Sink.o
+OBJS = $O/Generator.o $O/Queue.o $O/Sink.o $O/TransportRx.o $O/TransportTx.o
 
 # Message files
 MSGFILES =

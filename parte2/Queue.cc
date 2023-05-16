@@ -8,7 +8,6 @@ using namespace omnetpp;
 
 class Queue: public cSimpleModule {
 private:
-    int packetDrop;
     cOutVector bufferSizeQueue;
     cOutVector packetDropQueue;
     cQueue buffer;
@@ -37,18 +36,18 @@ Queue::~Queue() {
 
 void Queue::initialize() {
     buffer.setName("buffer");
-    packetDrop = 0;
     bufferSizeQueue.setName("BufferSizeQueue");
     packetDropQueue.setName("PacketDropQueue");
     packetDropQueue.record(0);
     endServiceEvent = new cMessage("endService");
+    feedbackSent = false;
 }
 
 void Queue::finish() {
 }
 
 void Queue::handleMessage(cMessage *msg) {
-    bufferSizeQueue.record(buffer.getLength());
+
     // if msg is signaling an endServiceEvent
     if (msg == endServiceEvent) {
         // if packet in buffer, send next one
@@ -56,13 +55,11 @@ void Queue::handleMessage(cMessage *msg) {
             // dequeue packet
             cPacket *pkt = (cPacket*) buffer.pop();
             // send packet
-            pkt->setKind(1);
             send(pkt, "out");
             // start new service
             serviceTime = pkt->getDuration();
             scheduleAt(simTime() + serviceTime, endServiceEvent);
         }
-        feedbackSent = false;
     } else { // if msg is a data packet
         const int umbral =  0.80 * par("bufferSize").intValue();
         const int umbralMin = 0.25 * par("bufferSize").intValue();        
@@ -70,24 +67,23 @@ void Queue::handleMessage(cMessage *msg) {
             // drop the packet
             delete(msg);
             this->bubble("packet-dropped");
-            packetDrop++;
-            packetDropQueue.record(packetDrop);
+            packetDropQueue.record(1);
         }
-        else { 
+        else {
             if (buffer.getLength() >= umbral && !feedbackSent)
-            {
-                Feedbackpkt *feedbackPkt = new Feedbackpkt();
+             {
+                cPacket *feedbackPkt = new cPacket("packet");
                 feedbackPkt->setByteLength(20);
                 feedbackPkt->setKind(2);
                 send(feedbackPkt, "out");
                 feedbackSent = true;
-            }else if (buffer.getLength() < umbralMin)
+            }else if (buffer.getLength() < umbralMin && feedbackSent)
             {
-                Feedbackpkt *feedbackPkt = new Feedbackpkt();
+                cPacket *feedbackPkt = new cPacket("packet");
                 feedbackPkt->setByteLength(20);
                 feedbackPkt->setKind(3);
                 send(feedbackPkt, "out");
-                //feedbackSent = true;
+                feedbackSent = false;
             }
             // Enqueue the packet
             buffer.insert(msg);
