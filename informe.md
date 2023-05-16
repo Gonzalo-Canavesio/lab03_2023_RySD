@@ -78,6 +78,8 @@ Tanto con el intervalo de generación de paquetes de 0.1 como con el de 0.15, el
 
 Como en este caso la velocidad de transmisión entre la cola Tx y la cola intermedia es igual a la velocidad de transmisión entre la cola intermedia y el recolector, el buffer de la cola intermedia no se llena, ya que los paquetes que recibe los transmite a la misma velocidad que los recibe. Esto se puede ver en los gráficos de tamaño de los buffers, donde el buffer de la cola intermedia se mantiene en un valor constante.
 
+Todos los paquetes perdidos son perdidos en el buffer del receptor, ya que es el único que se llena. Esto se puede ver en los gráficos de tamaño de los buffers, donde el buffer del receptor es el único que se llena y se mantiene en ese estado hasta que la simulación termina.
+
 [GRAFICO CARGA TRANSMITIDA Y RECIBIDA]
 
 ### Caso 2 - Problema de control de congestión
@@ -109,6 +111,8 @@ A continuación gráficos que representan el comportamiento de la red variando e
 | ![](graficos/Parte1_caso2/C2_0.1_tamBuffers2.png)   | ![](graficos/Parte1_caso2/C2_0.15_tamBuffers2.png)   | ![](graficos/Parte1_caso2/C2_0.2_tamBuffers2.png)   |
 
 Como se puede ver los resultados obtenidos en el caso 2 son muy similares a los del caso 1, la única diferencia entre ambos es cual es la cola que se satura y genera el cuello de botella, que en este caso es la cola intermedia y por eso hablamos de control de congestión.
+
+Todos los paquetes perdidos son perdidos en el buffer intermedio, ya que es el único que se llena. Esto se puede ver en los gráficos de tamaño de los buffers, donde el buffer intermedio es el único que se llena y se mantiene en ese estado hasta que la simulación termina.
 
 [GRAFICO CARGA TRANSMITIDA Y RECIBIDA]
 

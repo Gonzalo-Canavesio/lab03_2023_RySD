@@ -81,7 +81,7 @@ void Queue::handleMessage(cMessage *msg) {
                 cPacket *feedbackPkt = new cPacket("packet");
                 feedbackPkt->setByteLength(20);
                 feedbackPkt->setKind(3);
-                send(feedbackPkt, "out");
+                buffer.insertBefore(buffer.front(), feedbackPkt);
                 feedbackSent = false;
             }
             // Enqueue the packet
